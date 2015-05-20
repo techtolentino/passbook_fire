@@ -1,0 +1,11 @@
+<section class="artistinfo">
+	<a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+	<a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
+	<div class="artist cf" ng-model="artists">
+		<h1>{{artists[whichItem].name}}</h1>
+		<div class="info">
+			<h3>{{artists[whichItem].reknown}}</h3>
+		</div>
+	</div>
+	<a ng-href="index.html#/list">&laquo; Back to List</a>
+</section>
