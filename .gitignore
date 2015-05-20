@@ -1,3 +1,4 @@
 *.json
+js/data.json
 !spec/*.json
 /images
