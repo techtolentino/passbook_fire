@@ -1,4 +1,5 @@
 *.json
 js/data.json
+js/bill-data.json
 !spec/*.json
 /images
