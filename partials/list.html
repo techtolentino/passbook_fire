@@ -2,11 +2,11 @@
 	<div class="search">
 		<h1>Bill Directory</h1>
 		<label>search: </label>
-		<input ng-model="query" placeholder="Search for bills" autofocus>
-		<label class="formgroup">by:
+		<input ng-model="query" placeholder="Search for a bill" autofocus>
+		<label class="formgroup"> Sort by:
 			<select ng-model="billOrder">
 				<option value="name">Name</option>
-				<option value="reknown">Reknown</option>
+				<option value="due_date" selected>Due Date</option>
 			</select>
 		</label>
 	</div>

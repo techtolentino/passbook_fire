@@ -53,6 +53,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+strong { font-weight: bold; }
+
 
 /* Base Styles */
 
@@ -68,10 +70,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html {
   background-color: #023E54;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#023E54), to(#10AAC0));
-  background-image: -webkit-linear-gradient(top, #023E54, #10AAC0); 
-  background-image: -moz-linear-gradient(top, #023E54, #10AAC0);
-  background-image: -o-linear-gradient(top, #023E54, #10AAC0);
   min-height: 100%;
   height: auto;
 }
@@ -104,10 +102,10 @@ h1{
   margin-bottom: 10px;
 }
 
-h2{ 
-  font-size: 1.5rem;
-  line-height: 90%;
-  color: #c61c6f;
+h2 {
+  font-size: 2.5rem;
+  line-height: 130%;
+  color: #83B3AE;
 }
 
 h3{ 
@@ -159,7 +157,7 @@ a.small {
     vertical-align: middle;
     cursor: pointer;
     border: 1px solid transparent;
-    background: #C61C6F;
+    background: #EF2246;
     color: #FCF4DC;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -254,10 +252,15 @@ a.small {
   background: #F2FDF8;
   border-bottom: 2px solid black;
   opacity: 1;
+  color: #EF2246;
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.billlist li h2:hover{
+  color: #EF2246;
 }
 
 .bill img {
@@ -318,6 +321,8 @@ a.small {
   overflow: hidden;
 }
 
-.phone {
-
+#detail-logo {
+  float: right;
+  width: 300px;
+  margin-top: -40px;
 }

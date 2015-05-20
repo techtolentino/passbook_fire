@@ -2,10 +2,12 @@
 	<a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
 	<a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
 	<div class="bill cf" ng-model="bills">
-		<a href="{{bills[whichItem].link}}"><h1>{{bills[whichItem].name}} »</h1></a>
+		<img ng-src="{{bills[whichItem].logo}}" alt="Photo of {{item.name}}" id="detail-logo">
+		<a href="{{bills[whichItem].link}}"><h1>{{bills[whichItem].name}} »</h1>
+		</a>
 		<div class="info">
-			<h3><img src="https://raw.githubusercontent.com/techtolentino/passbook/master/images/phone.png" class="phone">{{bills[whichItem].phone_number}}</h3>
-			<p>Due Date: {{bills[whichItem].due_date}}</p>
+			<h3>{{bills[whichItem].phone_number}}</h3>
+			<p><strong>Due Date: </strong>{{bills[whichItem].due_date}}</p>
 		</div>
 	</div>
 	<a ng-href="index.html#/list">&laquo; Back to List</a>
