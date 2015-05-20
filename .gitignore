@@ -2,3 +2,7 @@
 js/data.json
 js/bill-data.json
 !spec/*.json
+.DS_Store
+node_modules
+.tmp
+npm-debug.log
