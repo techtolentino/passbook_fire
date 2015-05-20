@@ -1,24 +1,24 @@
-var artistControllers = angular.module('artistControllers', ['ngAnimate']);
+var billControllers = angular.module('billControllers', ['ngAnimate']);
 
-artistControllers.controller('ListController', ['$scope', '$http', function ($scope, $http){
-	$http.get('js/data.json').success(function(data){
-		$scope.artists = data;
+billControllers.controller('ListController', ['$scope', '$http', function ($scope, $http){
+	$http.get('js/bill-data.json').success(function(data){
+		$scope.bills = data;
 	});
 }]);
 
-artistControllers.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams){
-	$http.get('js/data.json').success(function(data){
-		$scope.artists = data;
+billControllers.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams){
+	$http.get('js/bill-data.json').success(function(data){
+		$scope.bills = data;
 		$scope.whichItem = $routeParams.itemId;
 
 		// Previous Item Logic
 		if ($routeParams.itemId > 0){
 			$scope.prevItem = Number($routeParams.itemId)-1;
 		} else {
-			$scope.prevItem = $scope.artists.length-1;
+			$scope.prevItem = $scope.bills.length-1;
 		}
 		// Next Item Logic
-		if ($routeParams.itemId < $scope.artists.length-1){
+		if ($routeParams.itemId < $scope.bills.length-1){
 			$scope.nextItem = Number($routeParams.itemId)+1;
 		} else {
 			$scope.nextItem = 0;

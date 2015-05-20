@@ -1,10 +1,11 @@
-<section class="artistinfo">
+<section class="billinfo">
 	<a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
 	<a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
-	<div class="artist cf" ng-model="artists">
-		<h1>{{artists[whichItem].name}}</h1>
+	<div class="bill cf" ng-model="bills">
+		<a href="{{bills[whichItem].link}}"><h1>{{bills[whichItem].name}} »</h1></a>
 		<div class="info">
-			<h3>{{artists[whichItem].reknown}}</h3>
+			<h3>{{bills[whichItem].phone_number}}</h3>
+			<p>Due Date: {{bills[whichItem].due_date}}</p>
 		</div>
 	</div>
 	<a ng-href="index.html#/list">&laquo; Back to List</a>
