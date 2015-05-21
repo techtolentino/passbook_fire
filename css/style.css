@@ -91,13 +91,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #145266;
+  color: #134496;
   font-family: 'Montserrat', Arial, sans-serif;
   text-decoration: none;
 }
 
 h1{
-  color: #145266;
+  color: #134496;
   font-size: 2.2rem;
   line-height: 100%;
   margin-bottom: 10px;
@@ -106,7 +106,7 @@ h1{
 h2 {
   font-size: 2.5rem;
   line-height: 1.5;
-  color: #83B3AE;
+  color: #134496;
 }
 
 h3{ 
@@ -118,7 +118,7 @@ h3{
 
 p {
   line-height: 1.3rem;
-  color: #475B62;
+  color: #134496;
   margin-bottom: 10px;
   font-family: 'Montserrat', Arial, sans-serif;
 }
@@ -159,7 +159,7 @@ a.small {
     vertical-align: middle;
     cursor: pointer;
     border: 1px solid transparent;
-    background: #EF2246;
+    background: #2271EF;
     color: #FCF4DC;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -177,7 +177,7 @@ a.small {
 }
 
 .btn:hover {
-    background: #09576D;
+  background: #134496;
 }
 
 .search label {
@@ -190,7 +190,7 @@ a.small {
   max-width: 750px;
   padding: 10px 0 10px 15px;
   font-size: 1rem;
-  color: #475B62;
+  color: #353535;
   background: rgba(255, 255, 255, 0.68);
   border: 2px solid #353535;
   border-bottom: 5px solid #353535;
@@ -213,7 +213,7 @@ a.small {
   display: inline;
   padding: 10px 0 10px 15px;
   font-size: 1rem;
-  color: #475B62;
+  color: #134496;
   background: rgba(255,255,255,0.4);
   border: 1px solid rgba(0,0,0,0.3);
   outline: 0;
@@ -256,7 +256,8 @@ a.small {
 
 .billlist li:hover {
   background: #FFFFFF;
-  outline: 3px solid #353535;
+  outline: 2px solid #353535;
+  border-bottom: 5px solid #353535;
   opacity: 1;
   color: #EF2246;
   -webkit-transform: scale(1.04);
@@ -267,6 +268,19 @@ a.small {
 
 .billlist li h2:hover{
   color: #EF2246;
+}
+
+.bill-info {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.info {
+  margin-left: 30px;
+}
+
+.bill {
+  margin-bottom: 30px;
 }
 
 .bill img {
@@ -300,6 +314,8 @@ a.small {
   margin-bottom: 30px;
   padding: 20px 30px;
   z-index: 20;
+  border: 2px solid #353535;
+  border-bottom: 8px solid #353535;
 }
 
 .billinfo h1 {
