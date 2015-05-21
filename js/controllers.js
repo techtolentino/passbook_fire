@@ -1,17 +1,12 @@
 var billControllers = angular.module('billControllers', ['ngAnimate']);
 
-
-billControllers.controller('ListController', ['$scope', '$http', function ($scope, $http, $firebaseObject){
+billControllers.controller('ListController', ['$scope', '$http', function ($scope, $http){
 	$http.get('js/bill-data.json').success(function(data){
 		$scope.bills = data;
 	});
 }]);
 
-billControllers.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $firebaseObject, $routeParams){
-	
-	var ref = new Firebase("https://passbook.firebaseio.com/");
-
-
+billControllers.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams){
 	$http.get('js/bill-data.json').success(function(data){
 		$scope.bills = data;
 		$scope.whichItem = $routeParams.itemId;

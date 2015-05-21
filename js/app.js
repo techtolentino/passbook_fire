@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute', 'billControllers', 'firebase']);
+var myApp = angular.module('myApp', ['ngRoute', 'billControllers']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
