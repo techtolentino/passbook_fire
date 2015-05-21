@@ -259,10 +259,10 @@ a.small {
   outline: 3px solid #353535;
   opacity: 1;
   color: #EF2246;
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .billlist li h2:hover{
