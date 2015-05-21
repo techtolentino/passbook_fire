@@ -70,7 +70,7 @@ strong { font-weight: bold; }
 }
 
 html {
-  background-color: #023E54;
+  background-color: #FF9141;
   min-height: 100%;
   height: auto;
 }
@@ -302,7 +302,7 @@ a.small {
 
 .billinfo h1 {
   font-size: 1.8em;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 5px 0;
   font-weight: bold;
 }
 
@@ -329,6 +329,10 @@ a.small {
   float: right;
   width: 300px;
   margin-top: -40px;
+}
+
+.main {
+  margin-top: 90px;
 }
 
 @media all and (max-width:580px){
