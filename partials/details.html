@@ -13,7 +13,7 @@
 		</a>
 		<h3>{{bills[whichItem].phone_number}}</h3>
 		<div class="bill-info">
-			<p><span class="dark">Due Date: </span>{{bills[whichItem].due_date}}</p>
+			<p><span class="dark">Due Date: </span>{{date | date:'MMMM'}} {{bills[whichItem].due_date}}, {{date | date:'yyyy'}}</p>
 			<p><span class="dark">Amount: </span>${{bills[whichItem].amount_due}}</p>
 		</div>
 	</div>

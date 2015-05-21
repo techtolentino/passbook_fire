@@ -11,6 +11,8 @@ billControllers.controller('DetailsController', ['$scope', '$http', '$routeParam
 		$scope.bills = data;
 		$scope.whichItem = $routeParams.itemId;
 
+		$scope.date = new Date();
+
 		// Previous Item Logic
 		if ($routeParams.itemId > 0){
 			$scope.prevItem = Number($routeParams.itemId)-1;
