@@ -70,7 +70,7 @@ strong { font-weight: bold; }
 }
 
 html {
-  background-color: #FF9141;
+  background-color: #E75B48;
   min-height: 100%;
   height: auto;
 }
@@ -105,7 +105,7 @@ h1{
 
 h2 {
   font-size: 2.5rem;
-  line-height: 130%;
+  line-height: 1.5;
   color: #83B3AE;
 }
 
@@ -132,7 +132,7 @@ a.small {
 /* Search Styles */
 
 .search {
-  background: #062C42;
+  background: transparent;
   color: #FFFFFF;
   width: 900px;
   max-width: 90%;
@@ -191,8 +191,9 @@ a.small {
   padding: 10px 0 10px 15px;
   font-size: 1rem;
   color: #475B62;
-  background: rgba(255,255,255,0.4);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.68);
+  border: 2px solid #353535;
+  border-bottom: 5px solid #353535;
   outline: 0;
 }
 
@@ -228,6 +229,7 @@ a.small {
   margin-bottom: 30px;
   opacity: .95;
   z-index: 10;
+  border: 5px solid #353535;
 }
 
 .billlist ul {
@@ -239,7 +241,7 @@ a.small {
 .billlist li {
   margin: 0;
   padding: 10px 10px 0 10px;  
-  border-bottom: 1px solid #A8EEFD;
+  border-bottom: 1px solid #353535;
   opacity: .9;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -253,14 +255,14 @@ a.small {
 }
 
 .billlist li:hover {
-  background: #F2FDF8;
-  border-bottom: 2px solid black;
+  background: #FFFFFF;
+  outline: 3px solid #353535;
   opacity: 1;
   color: #EF2246;
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .billlist li h2:hover{
