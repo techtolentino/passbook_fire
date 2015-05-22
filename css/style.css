@@ -147,7 +147,7 @@ a.small {
 }
 
 .search h1 {
-  color: #FFFFFF;
+  color: #353535;
 }
 
 .btn {
@@ -194,7 +194,7 @@ a.small {
   padding: 10px 0 10px 15px;
   font-size: 1rem;
   color: #353535;
-  background: rgba(255, 255, 255, 0.68);
+  background: #F9FCFC;
   border: 2px solid #353535;
   border-bottom: 5px solid #353535;
   outline: 0;
