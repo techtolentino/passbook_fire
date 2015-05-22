@@ -323,7 +323,7 @@ a.small {
 
 .billinfo h1 {
   font-size: 1.8em;
-  margin: 20px 0 5px 0;
+  margin: 45px 0 5px 0;
   font-weight: bold;
 }
 
@@ -349,7 +349,7 @@ a.small {
 #detail-logo {
   float: right;
   width: 300px;
-  margin-top: -40px;
+  /*margin-top: -40px;*/
 }
 
 #backtolist {

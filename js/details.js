@@ -6,5 +6,6 @@ myApp.controller('DetailsController',
 	var bill = $firebase(ref);
 
 	$scope.bill = bill.$asObject();
+	$scope.date = new Date();
 
 });
