@@ -1,19 +1,15 @@
-var myApp = angular.module('myApp', ['ngRoute', 'billControllers', 'firebase']);
+var myApp = angular.module('myApp', ['ngRoute', 'appControllers', 'firebase'])
+.constant('FIREBASE_URL', 'https://passbook.firebaseio.com/');
 
-myApp.controller("SampleCtrl", function($scope, $firebaseObject) {
-  var ref = new Firebase("https://passbook.firebaseio.com/");
-  // download the data into a local object
-  $scope.data = $firebaseObject(ref);
-  // putting a console.log here won't work, see below
-});
+var appControllers = angular.module('appControllers',['firebase']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
 	when('/list', {
 		templateUrl: 'partials/list.html',
-		controller: 'ListController'
+		controller: 'BillsController'
 	}).
-	when('/details/:itemId', {
+	when('/details/bills/:uId', {
 		templateUrl: 'partials/details.html',
 		controller: 'DetailsController'
 	}).

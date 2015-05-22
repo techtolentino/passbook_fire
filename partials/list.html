@@ -12,12 +12,11 @@
 		</label>
 	</div>
 	<ul class="billlist">
-		<li ng-animate="'animate'"class="bill cf" ng-repeat="item in bills | filter: query | orderBy: billOrder">
-			<a href="#/details/{{bills.indexOf(item)}}">
-				<img ng-src="{{item.logo}}" alt="Photo of {{item.name}}">
+		<li ng-animate="'animate'"class="bill cf" ng-repeat="(key,bill) in bills">
+			<a href="#/details/bills/{{key}}">
+				<img ng-src="{{bill.logo}}" alt="Photo of {{bill.name}}">
 				<div class="info">
-					<h2>{{item.name}}</h2>
-					<p>{{item.reknown}}</p>
+					<h2>{{bill.name}}</h2>
 				</div>
 			</a>
 		</li>

@@ -2,20 +2,19 @@
 	<img src="../images/logo.png" id="applogo" alt="Logo">
 	<h1>PassBook</h1>
 </div>
-
-<!-- Firebase test  -->
+<!-- Firebase -->
 <section class="billinfo">
-	<a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
-	<a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
-	<div class="bill cf" ng-model="bills">
-		<img ng-src="{{bills[whichItem].logo}}" alt="Photo of {{item.name}}" id="detail-logo">
-		<a href="{{bills[whichItem].link}}" target="blank"><h1 id="billname">{{bills[whichItem].name}} »</h1>
+	<div class="bill cf">
+		<img ng-src="{{bill.logo}}" alt="Photo of {{bill.name}}" id="detail-logo">
+		<a href="{{bill.link}}" target="blank"><h1 id="billname">{{bill.name}} »</h1>
 		</a>
-		<h3>{{bills[whichItem].phone_number}}</h3>
+		<h3>{{bill.phone_number}}</h3>
 		<div class="bill-info">
-			<p><span class="dark">Due Date: </span>{{date | date:'MMMM'}} {{bills[whichItem].due_date}}, {{date | date:'yyyy'}}</p>
-			<p><span class="dark">Amount: </span>${{bills[whichItem].amount_due}}</p>
+			<p><span class="dark">Due Date: </span>{{date | date:'MMMM'}} {{bill.due_date}}, {{date | date:'yyyy'}}</p>
+			<p><span class="dark">Amount: </span>${{bill.amount_due}}</p>
 		</div>
 	</div>
+	<a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+	<a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
 	<a ng-href="index.html#/list" id="backtolist">&laquo; Back to List</a>
 </section>

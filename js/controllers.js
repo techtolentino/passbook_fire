@@ -1,5 +1,6 @@
 var billControllers = angular.module('billControllers', ['ngAnimate']);
 
+
 billControllers.controller('ListController', ['$scope', '$http', function ($scope, $http){
 	$http.get('js/bill-data.json').success(function(data){
 		$scope.bills = data;
