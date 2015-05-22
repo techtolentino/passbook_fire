@@ -284,6 +284,7 @@ a.small {
 
 .bill {
   margin-bottom: 30px;
+  padding: 0 20px 0 20px;
 }
 
 .bill img {
@@ -315,7 +316,7 @@ a.small {
   margin: 0 auto;
   margin-top: 5px;
   margin-bottom: 30px;
-  padding: 20px 30px;
+  padding: 20px 0 0 0;
   z-index: 20;
   border: 2px solid #353535;
   border-bottom: 8px solid #353535;
@@ -354,8 +355,11 @@ a.small {
 
 #backtolist {
   background: #1B57EB;
-  padding: 5px 10px;
-  color: #FFFFFF;
+  padding: 15px 10px;
+  color: #FFF;
+  display: block;
+  margin: 0;
+  text-align: center;
 }
 #backtolist:hover {
   background: #134496;
@@ -383,5 +387,11 @@ a.small {
   }
   .bill-info {
     margin-left: 0;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #applogo {
+    width: 60px;
   }
 }
