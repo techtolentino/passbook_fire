@@ -5,6 +5,6 @@ myApp.controller('BillsController', function($scope, $routeParams,
 	var ref = new Firebase(FIREBASE_URL + 'bills/');
 	var bills = $firebase(ref);
 
-	$scope.bills = bills.$asObject();
+	$scope.bills = bills.$asArray();
 
 });

@@ -1,15 +1,39 @@
 <section class="billpage">
 	<div class="search">
-		<img src="../images/logo.png" id="applogo" alt="Logo">
-		<h1>PassBook</h1>
+		<h1>PassBook App</h1>
 		<label>search: </label>
 		<input ng-model="query" placeholder="Search for a bill" autofocus>
-<!-- 		<label class="formgroup"> Sort by:
+		<label class="formgroup"> Sort by:
 			<select ng-model="billOrder">
 				<option value="name">Name</option>
 				<option value="due_date" selected>Due Date</option>
 			</select>
-		</label> -->
+		</label>
+	</div>
+	<ul class="billlist">
+		<li ng-animate="'animate'"class="bill cf" ng-repeat="item in bills | filter: query | orderBy: billOrder">
+			<a href="#/details/bills/bill:{{bills.indexOf(item)}}">
+				<img ng-src="{{item.logo}}" alt="Photo of {{item.name}}">
+				<div class="info">
+					<h2>{{item.name}}</h2>
+				</div>
+			</a>
+		</li>
+	</ul>
+</section>
+
+<!-- <section class="billpage">
+	<div class="search">
+		<img src="../images/logo.png" id="applogo" alt="Logo">
+		<h1>PassBook</h1>
+		<label>search: </label>
+		<input ng-model="query" placeholder="Search for a bill" autofocus>
+		<label class="formgroup"> Sort by:
+			<select ng-model="billOrder">
+				<option value="name">Name</option>
+				<option value="due_date" selected>Due Date</option>
+			</select>
+		</label>
 	</div>
 	<ul class="billlist">
 		<li ng-animate="'animate'"class="bill cf" ng-repeat="(key,bill) in bills">
@@ -21,4 +45,4 @@
 			</a>
 		</li>
 	</ul>
-</section>
+</section> -->
