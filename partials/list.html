@@ -4,12 +4,12 @@
 		<h1>PassBook</h1>
 		<label>search: </label>
 		<input ng-model="query" placeholder="Search for a bill" autofocus>
-		<label class="formgroup"> Sort by:
+<!-- 		<label class="formgroup"> Sort by:
 			<select ng-model="billOrder">
 				<option value="name">Name</option>
 				<option value="due_date" selected>Due Date</option>
 			</select>
-		</label>
+		</label> -->
 	</div>
 	<ul class="billlist">
 		<li ng-animate="'animate'"class="bill cf" ng-repeat="(key,bill) in bills">
