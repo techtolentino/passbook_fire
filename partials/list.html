@@ -2,6 +2,7 @@
 	<div class="search">
 		<img src="../images/logo.png" id="applogo" alt="Logo">
 		<h1>PassBook</h1>
+		<p>{{date | date:'MMM d, y'}}</p>
 		<label>search: </label>
 		<input ng-model="query" placeholder="Search for a bill" autofocus>
 		<label class="formgroup"> Sort by:
@@ -19,7 +20,10 @@
 					<h2>{{bill.name}}</h2>
 				</div>
 			</a>
-			<img src="" alt="">
+<!-- 			<button ng-class="{'button': !isActive, 'paid': isActive}" ng-init="isActive = false" ng-click="isActive = !isActive"
+       id="paid">
+        Paid</button> -->
+
 		</li>
 	</ul>
 </section>

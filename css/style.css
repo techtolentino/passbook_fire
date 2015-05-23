@@ -258,19 +258,14 @@ a.small {
 }
 
 .billlist li:hover {
-  background: #FFFFFF;
-  outline: 2px solid #353535;
-  border-bottom: 5px solid #353535;
+  background: #FFF;
   opacity: 1;
   color: #EF2246;
-  -webkit-transform: scale(1.04);
-  -moz-transform: scale(1.04);
-  -o-transform: scale(1.04);
-  transform: scale(1.04);
 }
 
 .billlist li h2:hover{
   color: #EF2246;
+  text-decoration: underline;
 }
 
 .bill-info {
@@ -350,7 +345,6 @@ a.small {
 #detail-logo {
   float: right;
   width: 300px;
-  /*margin-top: -40px;*/
 }
 
 #backtolist {
@@ -363,6 +357,29 @@ a.small {
 }
 #backtolist:hover {
   background: #134496;
+}
+
+.paid {
+  background-color: #27A5F4;
+}
+
+button {
+  background-color: #C2C2C2;
+  float: right;
+  margin-top: -45px;
+  margin-right: 20px;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 1px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 @media all and (max-width:580px){

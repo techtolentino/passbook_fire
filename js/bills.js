@@ -6,5 +6,7 @@ myApp.controller('BillsController', function($scope, $routeParams,
 	var bills = $firebase(ref);
 
 	$scope.bills = bills.$asArray();
+	$scope.date = new Date();
+
 
 });
