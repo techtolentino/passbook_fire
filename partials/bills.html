@@ -9,6 +9,7 @@
 			<select ng-model="billOrder">
 				<option value="name">Name</option>
 				<option value="due_date" selected>Due Date</option>
+				<option value="paid">Paid</option>
 			</select>
 		</label>
 	</div>
@@ -20,6 +21,7 @@
 					<h2>{{bill.name}}</h2>
 				</div>
 			</a>
+			<div class="{{bill.paid}}"></div>
 		</li>
 	</ul>
 </section>

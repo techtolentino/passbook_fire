@@ -21,21 +21,23 @@
 		<div class="radio-toolbar">
 			<input 
 				type="radio" 
+				class="paid-buttons"
 				id="radio1" 
 				name="radios"
 				ng-model="paid" 
 				ng-change="paidChange(paid)"
-				value="green">
-		  <label for="radio1" id="greenRadio"></label>
+				value="paid">
+		  <label for="radio1" id="greenRadio">Paid</label>
 
 		  <input 
 		  	type="radio" 
+		  	class="paid-buttons"
 		  	id="radio2" 
 		  	name="radios"
 		  	ng-model="paid" 
 		  	ng-change="paidChange(paid)"
-		  	value="grey">
-		  <label for="radio2" id="grellowRadio"></label>
+		  	value="unpaid">
+		  <label for="radio2" id="grellowRadio">Unpaid</label>
 		</div>
 	</form>
 	<a ng-href="index.html#/list" id="backtolist">&laquo; Back to List</a>

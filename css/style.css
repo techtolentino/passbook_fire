@@ -354,17 +354,73 @@ a.small {
   display: block;
   margin: 0;
   text-align: center;
+  clear: both;
 }
 #backtolist:hover {
   background: #134496;
 }
 
-.blue {
+.radio-toolbar input[type="radio"] {
+  display:none; 
+}
+
+.radio-toolbar label {
+  float: left;
+  background-color: #DDD;
+  width: 50%;
+  padding: 14px;
+  text-align: center;
+  margin: 0;
+  color: #164694;
+  font-size: 12px;
+  border: 1px solid #c8c8c8;
+}
+
+.radio-toolbar label:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.radio-toolbar label:focus {
+  outline: none;
+}
+
+.radio-toolbar input[type="radio"]:checked + label { 
+  opacity: 1;
+  color: #FFF;
   background: #27A5F4;
 }
 
-.grey {
-  background: #1B57EB;
+.paid {
+  background: #46E15A;
+  float: right;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.9;
+  color: #FFF;
+  margin-top: -45px;
+  margin-right: 20px;
+}
+
+.paid:before {
+  content: '$';
+}
+
+.unpaid {
+  background: #E42929;
+  float: right;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.9;
+  color: #FFF;
+  margin-top: -45px;
+  margin-right: 20px;
+}
+
+.unpaid:before {
+    content: '!';
 }
 
 button {
@@ -386,7 +442,7 @@ button:hover {
   cursor: pointer;
 }
 
-@media all and (max-width:580px){
+@media all and (max-width:667px){
   .info h2 {
     font-size: 1.25em;
     line-height: 2.6;
@@ -408,6 +464,10 @@ button:hover {
   }
   .bill-info {
     margin-left: 0;
+  }
+  .paid, .unpaid {
+    margin-top: -37px;
+    margin-right: 5px;
   }
 }
 

@@ -17,6 +17,6 @@ myApp.controller('DetailsController',
     };
 
 		updateObj.$update(updateColor);
-	}
+	};
 
 });
