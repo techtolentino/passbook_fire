@@ -15,5 +15,28 @@
 			<p><span class="dark">Amount: </span>${{bill.amount_due}}</p>
 		</div>
 	</div>
+	<form name="dashColorForm"
+		id="dashColorForm"
+		novalidate>
+		<div class="radio-toolbar">
+			<input 
+				type="radio" 
+				id="radio1" 
+				name="radios"
+				ng-model="paid" 
+				ng-change="paidChange(paid)"
+				value="green">
+		  <label for="radio1" id="greenRadio"></label>
+
+		  <input 
+		  	type="radio" 
+		  	id="radio2" 
+		  	name="radios"
+		  	ng-model="paid" 
+		  	ng-change="paidChange(paid)"
+		  	value="grey">
+		  <label for="radio2" id="grellowRadio"></label>
+		</div>
+	</form>
 	<a ng-href="index.html#/list" id="backtolist">&laquo; Back to List</a>
 </section>

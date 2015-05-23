@@ -6,6 +6,17 @@ myApp.controller('DetailsController',
 	var bill = $firebase(ref);
 
 	$scope.bill = bill.$asObject();
+	
 	$scope.date = new Date();
+
+	$scope.paidChange = function() {
+		var updateObj = $firebase(ref);
+
+		var updateColor = {
+      paid : $scope.paid
+    };
+
+		updateObj.$update(updateColor);
+	}
 
 });

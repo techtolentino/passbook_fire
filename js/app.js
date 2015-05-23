@@ -5,8 +5,8 @@ var appControllers = angular.module('appControllers',['firebase']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
-	when('/list', {
-		templateUrl: 'partials/list.html',
+	when('/bills', {
+		templateUrl: 'partials/bills.html',
 		controller: 'BillsController'
 	}).
 	when('/details/bills/:uId', {
@@ -14,6 +14,6 @@ myApp.config(['$routeProvider', function($routeProvider){
 		controller: 'DetailsController'
 	}).
 	otherwise({
-		redirectTo: '/list'
+		redirectTo: '/bills'
 	});
 }]);

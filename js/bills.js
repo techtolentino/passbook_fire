@@ -9,4 +9,5 @@ myApp.controller('BillsController', function($scope, $routeParams,
 	$scope.date = new Date();
 
 
+
 });
