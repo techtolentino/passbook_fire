@@ -10,7 +10,7 @@ billControllers.controller('ListController', ['$scope', '$http', function ($scop
 billControllers.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams){
 	$http.get('js/bill-data.json').success(function(data){
 		$scope.bills = data;
-		$scope.whichItem = $routeParams.itemId;
+		$scope.whichItem = $routeParams.uId;
 
 		$scope.date = new Date();
 
