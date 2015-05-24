@@ -393,6 +393,7 @@ a.small {
   opacity: 1;
   color: #FFF;
   background: #27A5F4;
+  border: 1px solid #27A5F4;
 }
 
 .paid {
