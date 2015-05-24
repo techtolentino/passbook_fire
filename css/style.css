@@ -315,7 +315,7 @@ a.small {
   margin: 0 auto;
   margin-top: 5px;
   margin-bottom: 30px;
-  padding: 20px 0 0 0;
+  padding: 0;
   z-index: 20;
   border: 2px solid #353535;
   border-bottom: 8px solid #353535;
@@ -323,7 +323,7 @@ a.small {
 
 .billinfo h1 {
   font-size: 1.8em;
-  margin: 45px 0 5px 0;
+  margin: 30px 0 5px 0;
   font-weight: bold;
 }
 
